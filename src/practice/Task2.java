@@ -6,10 +6,11 @@ package practice;
 public class Task2 {
 
     public static void main(String[] args) {
-        int[] array = {1, 2, 3, 4, 5};
-        int n = 5;
+        int[] array = {5, 1, 2, 3, 4, 5};
 
-        printCountResult(countNumberOfTimes(array, n));
+        printCountResult(numberCountInArray(array, 5)); // Two times
+        printCountResult(numberCountInArray(array, 2)); // YES
+        printCountResult(numberCountInArray(array, 8)); // NO
 
     }
 
@@ -19,11 +20,11 @@ public class Task2 {
         } else if (k==1){
             System.out.println("YES");
         } else {
-            System.out.println(k + "times");
+            System.out.println(k + " times");
         }
     }
 
-    private static int countNumberOfTimes(int[] array, int n) {
+    private static int numberCountInArray(int[] array, int n) {
 
         int k = 0;
 
