@@ -36,8 +36,8 @@ public class Main {
     }
 
     static void testUser1() {
-        User user1 = new User(1001, "Denis", 10, "Test");
-        User user2 = new User(1000, "DenisTest", 10, "Test");
+        User user1 = new User(1001, "Denis", 10, "module1.webinar.Test");
+        User user2 = new User(1000, "DenisTest", 10, "module1.webinar.Test");
 
         System.out.println(user1);
 

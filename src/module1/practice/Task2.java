@@ -1,4 +1,4 @@
-package practice;
+package module1.practice;
 
 /**
  * Created by citsym on 07.11.16.

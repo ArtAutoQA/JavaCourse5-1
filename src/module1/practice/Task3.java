@@ -1,4 +1,4 @@
-package practice;
+package module1.practice;
 
 /**
  * Created by citsym on 07.11.16.
@@ -7,7 +7,7 @@ public class Task3 {
 
     public static void main(String[] args) {
 
-        // Test data
+        // module1.webinar.Test data
         int balance = 1000000;
         int toWithdraw = 500;
 
@@ -20,7 +20,7 @@ public class Task3 {
 
 
 
-        // Test data
+        // module1.webinar.Test data
         int balance2 = 1000000;
         int toWithdraw2 = 1000010;
 
