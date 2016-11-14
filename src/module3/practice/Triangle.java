@@ -17,12 +17,12 @@ public class Triangle {
     double line2;
     double line3;
 
-    private  double square;
+    private double square;
 
-    public Triangle(int x1,int y1, int x2,int y2,int x3,int y3){
+    public Triangle(int x1, int y1, int x2, int y2, int x3, int y3) {
 
         isPointsOnOneLine = (x3 - x1) / (x2 - x1) == (y3 - y1) / (y2 - y1);
-        if (isPointsOnOneLine){
+        if (isPointsOnOneLine) {
             System.out.println("ALL THE POINTS IN ONE LINE");
         }
 
@@ -34,20 +34,22 @@ public class Triangle {
         this.y3 = y3;
 
 
-        line1 = calculateLine(x1,y1, x2, y2);
-        line2 = calculateLine(x2,y2, x3, y3);
-        line3 = calculateLine(x1,y1, x3, y3);
+        line1 = calculateLine(x1, y1, x2, y2);
+        line2 = calculateLine(x2, y2, x3, y3);
+        line3 = calculateLine(x1, y1, x3, y3);
 
 
-    };
-    
-    private double calculateSquare(){
+    }
 
-        double perimeter  = calculatePerimeter();
-        double halfOfPerimeter = perimeter/2;
+    ;
+
+    private double calculateSquare() {
+
+        double perimeter = calculatePerimeter();
+        double halfOfPerimeter = perimeter / 2;
 
         // square is calculate with help of Heron Formula
-        square = Math.sqrt(halfOfPerimeter * (halfOfPerimeter-line1) * (halfOfPerimeter - line2) * (halfOfPerimeter - line3));
+        square = Math.sqrt(halfOfPerimeter * (halfOfPerimeter - line1) * (halfOfPerimeter - line2) * (halfOfPerimeter - line3));
 
         return square;
     }
