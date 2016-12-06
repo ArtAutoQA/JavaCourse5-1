@@ -14,21 +14,21 @@ public class BubbleSort {
         System.out.println(Arrays.toString(sortedArray));
     }
 
-    private static int[] sort(int[] array) {
+    public static int[] sort(int[] toSort) {
         boolean flag = true;
         int temp;
 
         while (flag) {
             flag = false;
-            for (int j = 0; j < array.length - 1; j++) {
-                if (array[j] > array[j + 1]) {
-                    temp = array[j];
-                    array[j] = array[j + 1];
-                    array[j + 1] = temp;
+            for (int j = 0; j < toSort.length - 1; j++) {
+                if (toSort[j] > toSort[j + 1]) {
+                    temp = toSort[j];
+                    toSort[j] = toSort[j + 1];
+                    toSort[j + 1] = temp;
                     flag = true;
                 }
             }
         }
-        return array;
+        return toSort;
     }
 }
