@@ -59,7 +59,10 @@ public class Group {
 
     public <T extends Shape> Group shapesSeparatedByType(Class<T> clazz){
 
-        return null;
+        Map<Class<? extends Shape>, Group> classGroupMap = shapesSeparatedByType();
+
+        return classGroupMap.get(clazz);
+
     }
 
 

@@ -39,7 +39,13 @@ public class UseShapes {
         Group circlesGroup = classGroupMap.get(Circle.class);
 
 
-        System.out.println("===========================");
+        System.out.println("=========================== Circles");
         circlesGroup.getAll().forEach(System.out::println);
+
+        System.out.println("=========================== Rectangles ");
+        group.shapesSeparatedByType(Rectangle.class).getAll().forEach(System.out::println);
+
+
+
     }
 }
