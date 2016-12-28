@@ -2,7 +2,7 @@ package module8.webinar.generics;
 
 //import java.lang.T;
 
-public class MyClass <T, P, B extends P> {
+public class MyClass <T, B> {
 
     T doSomething(T t) {
         System.out.println("doSomething method is invoked");
