@@ -46,6 +46,8 @@ public class UseShapes {
         group.shapesSeparatedByType(Rectangle.class).getAll().forEach(System.out::println);
 
 
+        System.out.println("abcC".compareTo("abcDfff"));
+
 
     }
 }
