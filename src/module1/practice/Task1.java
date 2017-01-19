@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class Task1 {
     public static void main(String[] args) {
         int[] balances = {1040, 5400, 4321, 900, -5000, 1001};
-        String[] names = {"Test1", "Alexandr", "Denis", "module1.webinar.Test2", "User", "Pasha"};
+        String[] names = {"Test1", "Alexandr", "Denis", "module1.module10.webinar.Test2", "User", "Pasha"};
 
         int count = 0;
         for (int bal : balances) {

@@ -1,7 +1,7 @@
 package module3.webinar;
 
 
-import module3.webinar.objectexample.User;
+import module3.webinar.adsWebSite.User;
 import module3.webinar.phones.IPhone;
 import module3.webinar.phones.Phone;
 
@@ -9,7 +9,7 @@ public class Main {
 
 
     public static void main(String[] args) {
-        User user = new User();
+        //User user = new User();
 
 
 

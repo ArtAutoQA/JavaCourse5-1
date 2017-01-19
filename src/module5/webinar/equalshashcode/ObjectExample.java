@@ -8,13 +8,13 @@ public class ObjectExample {
         Employee e1 = new Employee();
         Employee e2 = new Employee();
 
-        //e1.setFirstname("Test");
+        //e1.setFirstname("FileWriterExample");
         //System.out.println(e1.toString());
 
         //String employee = e1.toString();
 
-        e1.setFirstname("Test");
-        e2.setFirstname("Test");
+        e1.setFirstname("FileWriterExample");
+        e2.setFirstname("FileWriterExample");
 
         e1.setLastName("Test1");
         e2.setLastName("Test1");

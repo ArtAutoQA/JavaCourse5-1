@@ -5,18 +5,18 @@ public class Main {
 
 
     public static void main(String[] args) {
-        String test = "test";
+        /*String test = "test";
 
         testUser();
         testUser1();
 
 
 
-        System.out.println(test);
+        System.out.println(test);*/
     }
 
 
-    static void testUser() {
+    /*static void testUser() {
         int a;
         a = 10;
 
@@ -36,8 +36,8 @@ public class Main {
     }
 
     static void testUser1() {
-        User user1 = new User(1001, "Denis", 10, "module1.webinar.Test");
-        User user2 = new User(1000, "DenisTest", 10, "module1.webinar.Test");
+        User user1 = new User(1001, "Denis", 10, "module1.module10.webinar.FileWriterExample");
+        User user2 = new User(1000, "DenisTest", 10, "module1.module10.webinar.FileWriterExample");
 
         System.out.println(user1);
 
@@ -50,5 +50,5 @@ public class Main {
 
 
         System.out.println(user1.getName());
-    }
+    }*/
 }

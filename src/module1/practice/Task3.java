@@ -7,7 +7,7 @@ public class Task3 {
 
     public static void main(String[] args) {
 
-        // module1.webinar.Test data
+        // module1.module10.webinar.FileWriterExample data
         int balance = 1000000;
         int toWithdraw = 500;
 
@@ -20,7 +20,7 @@ public class Task3 {
 
 
 
-        // module1.webinar.Test data
+        // module1.module10.webinar.FileWriterExample data
         int balance2 = 1000000;
         int toWithdraw2 = 1000010;
 

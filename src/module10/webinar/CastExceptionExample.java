@@ -1,4 +1,4 @@
-package webinar;
+package module10.webinar;
 
 public class CastExceptionExample {
     public static void main(String[] args) {

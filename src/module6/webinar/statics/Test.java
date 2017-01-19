@@ -18,7 +18,7 @@ public class Test {
         user1.setCompanyName("Google");
         user2.setCompanyName("Luxoft");
         user3.setCompanyName("GlobalLogic");
-        user1.setCompanyName("Test");
+        user1.setCompanyName("FileWriterExample");
 
         System.out.println(user1);
         System.out.println(user2);
