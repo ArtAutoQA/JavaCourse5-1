@@ -12,12 +12,12 @@ public class PersonDaoIml implements PersonDao {
     List<Person> list = new ArrayList<>();
 
     @Override
-    public Person save(Person person) throws Exception {
+    public Person save(Person person) {
 
         boolean result = list.add(person);
 
         if (!result){
-            throw new Exception(" Failed to save to DB");
+            throw new DBConnectionException(" Failed to save to DB");
         }
 
         return person;
@@ -28,11 +28,7 @@ public class PersonDaoIml implements PersonDao {
 
         Optional<Person> first = list.stream().filter((t) -> t.getEmail().equals(person.getEmail())).findFirst();
 
-        if (first.isPresent()){
-            return first.get();
-        } else {
-            throw new PersonNotFoundException("No user with such email: " + person.getEmail());
-        }
+        return first.orElseThrow(() -> new PersonNotFoundException("No user with such email: " + person.getEmail()));
 
     }
 }

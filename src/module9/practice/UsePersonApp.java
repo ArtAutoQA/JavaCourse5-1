@@ -37,6 +37,12 @@ public class UsePersonApp {
         try {
             controller.save(requestParams);
             controller.save(requestParams2);
+
+        } catch (InvalidFormException e ) {
+            sendMessageToUser(e.getMessage());
+        } catch (DBConnectionException e) {
+            String prepared = prepareMsgForDBProblems(e);
+            sendMessageToUser(prepared);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -45,15 +51,23 @@ public class UsePersonApp {
         String name = null;
 
         try {
-            name = controller.findByEmail(requestParams);
+            name = controller.findByEmail(requestParams3);
         } catch (Exception e) {
             e.printStackTrace();
         }
 
         // check the result
 
-        System.out.println("Result is " + name.equals("Pavlo"));
+        System.out.println("Result is " + "Nastya".equals(name));
 
+
+    }
+
+    private static String prepareMsgForDBProblems(DBConnectionException e) {
+        return null;
+    }
+
+    private static void sendMessageToUser(String message) {
 
     }
 }

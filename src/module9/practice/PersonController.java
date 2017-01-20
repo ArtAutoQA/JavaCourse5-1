@@ -14,14 +14,14 @@ public class PersonController {
 
     PersonDao personDao = new PersonDaoIml();
 
-    public void save(Map<String, String> requestParams) throws Exception {
+    public void save(Map<String, String> requestParams) {
 
         String name = requestParams.get(FIRST_NAME);
         String secondNAme = requestParams.get(SECOND_NAME);
         String email = requestParams.get(EMAIL);
 
         if (name == null || name.isEmpty() || email == null || email.isEmpty()) {
-            throw new Exception("Name and Email should be filled");
+            throw new InvalidFormException("Name and Email should be filled");
         }
 
         Person person = new Person(name, secondNAme, email);

@@ -6,7 +6,7 @@ package module9.practice;
  */
 public interface PersonDao {
 
-    Person save(Person person) throws Exception;
+    Person save(Person person);
 
     Person findByEmail(Person person);
 }
