@@ -1,12 +1,16 @@
 package module4.questions;
 
+import java.io.Serializable;
+
 /**
  * Created by citsym on 18.11.16.
  */
-public class Car {
+public class Car implements Serializable {
+
+    public static  int carCount =6;
 
     private String color = "red";
-    private int maxSpeed = 100;
+    private transient int maxSpeed = 100;
     private int minSpeed = 0;
     private char state = 'A';
 
@@ -53,6 +57,22 @@ public class Car {
 //        return getClass().getSimpleName() + " with Engine having " + engine.getHorsesPower() + " of horse power";
 //    }
 
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public int getMaxSpeed() {
+        return maxSpeed;
+    }
+
+    public void setMaxSpeed(int maxSpeed) {
+        this.maxSpeed = maxSpeed;
+    }
 
     @Override
     public String toString() {

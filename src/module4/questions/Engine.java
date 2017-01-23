@@ -1,9 +1,11 @@
 package module4.questions;
 
+import java.io.Serializable;
+
 /**
  * Created by citsym on 18.11.16.
  */
-public class Engine {
+public class Engine implements Serializable{
 
     private boolean engineOn = false;
     private int horsesPower;
