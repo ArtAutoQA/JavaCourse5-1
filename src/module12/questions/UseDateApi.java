@@ -99,11 +99,15 @@ public class UseDateApi {
 
         LocalDate localDate3 = LocalDate.parse("2020.06.17",  DateTimeFormatter.ofPattern("yyyy.MM.dd"));
 
+
+        // Working in branch
         System.out.println(localDate3);
 
     }
 
     private static void someMethod(Date now) {
+
+        // master working
         now.setTime(100010);
     }
 }
