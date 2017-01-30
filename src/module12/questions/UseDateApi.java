@@ -104,6 +104,6 @@ public class UseDateApi {
     }
 
     private static void someMethod(Date now) {
-        now.setTime(00000);
+//        now.setTime(00000);
     }
 }
